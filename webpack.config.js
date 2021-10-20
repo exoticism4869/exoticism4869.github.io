@@ -7,7 +7,7 @@ module.exports = {
 	entry: './src/index.js',
 	output: {
 		filename: 'main.js',
-		path: path.resolve(__dirname, 'dist'),
+		path: path.resolve(__dirname, 'docs'),
 		clean: true
 	},
 	plugins: [
@@ -18,7 +18,7 @@ module.exports = {
 		new VueLoaderPlugin()
 	],
 	devServer: {
-		static: './dist'
+		static: './docs'
 	},
 	module: {
 		rules: [
