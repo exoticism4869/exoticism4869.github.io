@@ -1,6 +1,6 @@
 const path = require('path')
-const htmlWebpackPlugin = require('html-webpack-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
+const htmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
 	mode: 'development',
@@ -11,14 +11,15 @@ module.exports = {
 		clean: true
 	},
 	plugins: [
+		new VueLoaderPlugin(),
 		new htmlWebpackPlugin({
-			title: '首页',
-			template: './public/index.html'
-		}),
-		new VueLoaderPlugin()
+			template: 'public/index.html',
+			title: `Seb's`,
+			favicon: 'public/favicon.ico'
+		})
 	],
 	devServer: {
-		static: './docs'
+		static: { directory: path.join(__dirname, 'docs') }
 	},
 	module: {
 		rules: [
@@ -29,6 +30,10 @@ module.exports = {
 			{
 				test: /\.vue$/,
 				loader: 'vue-loader'
+			},
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: 'asset/resource'
 			}
 		]
 	}

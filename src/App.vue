@@ -1,11 +1,21 @@
 <template>
-	<div id="app">loading......</div>
+	<div>
+		<Top />
+		<router-view></router-view>
+	</div>
 </template>
 
 <script>
+	import Top from './components/Top.vue'
 	export default {
-		name: 'App'
+		name: 'App',
+		components: { Top }
 	}
 </script>
 
-<style></style>
+<style>
+	* {
+		padding: 0;
+		margin: 0;
+	}
+</style>
