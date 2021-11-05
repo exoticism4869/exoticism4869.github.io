@@ -1,15 +1,15 @@
 <template>
 	<div>
-		<Top />
-		<router-view></router-view>
+		<router-view name="Home"></router-view>
+		<router-view name="Frontend"></router-view>
+		<router-view name="Basketball"></router-view>
 	</div>
 </template>
 
 <script>
-	import Top from './components/Top.vue'
 	export default {
 		name: 'App',
-		components: { Top }
+		components: {}
 	}
 </script>
 
@@ -17,5 +17,9 @@
 	* {
 		padding: 0;
 		margin: 0;
+	}
+	a {
+		text-decoration: none;
+		color: black;
 	}
 </style>
