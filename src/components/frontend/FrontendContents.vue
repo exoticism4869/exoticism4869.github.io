@@ -1,6 +1,7 @@
 <template>
 	<div id="frontend-contents">
 		<Topbar />
+		<!-- <router-view></router-view> -->
 		<Main />
 	</div>
 </template>

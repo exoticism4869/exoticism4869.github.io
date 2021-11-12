@@ -1,17 +1,16 @@
 <template>
 	<div class="main">
-		<Maintable />
+		<router-view />
 	</div>
 </template>
 
 <script>
-	import Maintable from './Maintable.vue'
 	export default {
-		components: { Maintable }
+		components: {}
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	.main {
 		width: 80%;
 		height: 90%;

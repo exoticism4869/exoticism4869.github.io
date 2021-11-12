@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url('../fonts/Raleway-VariableFont_wght.ttf');
+}
+@font-face {
+	font-family: 'ZenAntique-Regular';
+	src: url('../fonts/ZenAntique-Regular.ttf');
+}
+@font-face {
+	font-family: 'TitilliumWeb';
+	src: url('../fonts/TitilliumWeb-Light.ttf');
+}
+@font-face {
+	font-family: 'DancingScript-Bold';
+	src: url('../fonts/DancingScript-Bold.ttf');
+}
+$font-title: 'Raleway';
+$font-subtitle: 'ZenAntique-Regular';
+$font-text: 'TitilliumWeb.ttf';
+$font-dance: 'DancingScript-Bold.ttf';

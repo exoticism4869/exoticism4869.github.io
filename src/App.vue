@@ -1,15 +1,16 @@
 <template>
 	<div>
-		<router-view name="Home"></router-view>
+		<Home />
 		<router-view name="Frontend"></router-view>
 		<router-view name="Basketball"></router-view>
 	</div>
 </template>
 
 <script>
+	import Home from './components/home/Home.vue'
 	export default {
 		name: 'App',
-		components: {}
+		components: { Home }
 	}
 </script>
 

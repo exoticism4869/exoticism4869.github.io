@@ -13,7 +13,8 @@
 	}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
+	// @use '../../assets/styles/fonts';
 	@font-face {
 		font-family: 'Raleway';
 		src: url('../../assets/fonts/Raleway-VariableFont_wght.ttf');

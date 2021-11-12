@@ -10,7 +10,7 @@
 	export default {}
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 	@font-face {
 		font-family: 'ZenAntique-Regular';
 		src: url('../../assets/fonts/ZenAntique-Regular.ttf');

@@ -28,12 +28,28 @@ module.exports = {
 				use: ['style-loader', 'css-loader']
 			},
 			{
+				test: /\.s[ac]ss$/i,
+				use: ['style-loader', 'css-loader', 'sass-loader']
+			},
+			{
 				test: /\.vue$/,
 				loader: 'vue-loader'
 			},
 			{
 				test: /\.(png|svg|jpg|jpeg|gif)$/i,
 				type: 'asset/resource'
+			},
+			{
+				test: /\.md$/,
+				use: [
+					{ loader: 'vue-loader' },
+					{
+						loader: 'vue-markdown-loader/lib/markdown-compiler',
+						options: {
+							raw: true
+						}
+					}
+				]
 			}
 		]
 	}
